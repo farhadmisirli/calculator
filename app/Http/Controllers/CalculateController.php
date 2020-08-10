@@ -16,9 +16,12 @@ class CalculateController extends Controller
             'fi' => (!empty($req->input('fi'))) ? $req->input('fi') : 0.00,
             'result' => 0
         ];
-
         
-
+        if($req->input('p') > 0 && $req->input('d') > 0 && $req->input('sigma') > 0 && $req->input('fi')) {
+            $data['result'] = 10;
+            $result = ($data['p'] * $data['d']) / (2 * $data['sigma'] * $data['fi'] - $data['p']);
+            $data['result'] = $result;
+        }
 
         return view('calculate', $data);
     }
