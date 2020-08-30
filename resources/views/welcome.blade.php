@@ -5,59 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Site</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Nunito', sans-serif;
-                font-weight: 200;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 13px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
     </head>
     <body>
         <div class="flex-center position-ref full-height">
@@ -75,9 +22,32 @@
                 </div>
             @endif
 
-            <div class="content">
-                <div class="text-center">
-                    <a class="btn btn-primary btn-lg" href="/calculate" role="button">Calculator</a>
+            <div class="container">
+                <div class="">
+                    
+                    <h3>Mohkemliye hesabat dusturlari</h3>
+                    <ol>
+                        <li><a href="/calculate/formula1">Gövdənin hesabı qalığı </a></li>
+                        <li><a href="/calculate/formula2">Elleptik dibin hesabı qalığı</a></li>
+                    </ol>
+                    <hr>
+
+                    <h3>Tutumda tetbiq olunacaq qoruyucu klapanlarin buraxma en kesiklerinin sahesinin ve onlarin sayinin teyini dusturlari </h3>
+                    <ol>
+                        <li><a href="/calculate/formula5">Tutumun xarici sethinin sahesi:</a></li>
+                        <li><a href="/calculate/formula6">Tutumun silindirik sethinin sahesi:</a></li>
+                        <li><a href="/calculate/formula7">Sildirin hissenin xarici diametri</a></li>
+                        <li><a href="/calculate/formula8">Tutumun elliptik dibinin xarici sethinin sahesi</a></li>
+                    </ol>
+
+                    <h3>Tutumun hendesi hecminin teyini</h3>
+                    <ol>
+                        <li><a href="/calculate/formula10">Tutumun govdesinin hecmi</a></li>
+                        <li><a href="/calculate/formula11">Tutumun dibinin hecmi</a></li>
+                        <li><a href="/calculate/formula12">Tutumun hecmi</a></li>
+                        <li><a href="/calculate/formula13">Tutumun faydali hecmi</a></li>
+                    </ol>
+                    {{-- <a class="btn btn-primary btn-lg" href="/calculate" role="button">Calculator</a> --}}
                 </div>
             </div>
         </div>
